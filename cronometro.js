@@ -1,17 +1,17 @@
 "use strict"
 
 
-let hora = 0;
-let minutos = 0;
-let segundos = 0;
-let milisegundos = 0;
+var hora = 0;
+var minutos = 0;
+var segundos = 0;
+var milisegundos = 0;
 
-let tempo = 0;
-let cronometro;
+var tempo = 1000;
+var cronometro;
 
 
 function comecar() {
-
+    setInterval(() => {tempos();}, tempo); 
 }
 function parar() {
     
@@ -19,6 +19,6 @@ function parar() {
 function limpar() {
     
 }
-function start() {
-    
+function tempos() {
+    document.getElementById('contador').innerText = 'foi';
 }

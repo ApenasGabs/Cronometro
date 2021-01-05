@@ -1,15 +1,15 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="styles/style.css">
         
     </head>
     <body>
         <main>
             <form name="formulario">
-                <h1 class="contador">00:00:00</h1>
-                <button class="Iniciar">Iniciar</button>
-                <button class="pausar">Pausar</button>
-                <button class="parar">Parar</button>
+                <h1 id="contador">00:00:00</h1>
+                <button onclick="comecar();" class="Iniciar">Iniciar</button>
+                <button onclick="parar();" class="pausar">Pausar</button>
+                <button onclick="limpar();" class="parar">Parar</button>
             </form>
         </main>
         <footer>
